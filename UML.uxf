@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>0</y>
+      <w>210</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+Parent
+--
++&lt;&lt;Proppertais&gt;&gt;Id:string
++&lt;&lt;Proppertais&gt;&gt;Fname:string
++&lt;&lt;Proppertais&gt;&gt;Lname:string
++&lt;&lt;Proppertais&gt;&gt;Date:string
++&lt;&lt;Proppertais&gt;&gt;Phone:int
++&lt;&lt;Proppertais&gt;&gt;Description:string
+--
++Parent(i:string,fn:string,
+ln:string,dt:string,ph:int,
+desc:string);</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>300</y>
+      <w>210</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Invoice
+--
++&lt;&lt;Proppertais&gt;&gt;R_id:string
++&lt;&lt;Proppertais&gt;&gt;Direction:string
++&lt;&lt;Proppertais&gt;&gt;Total:decimal
++&lt;&lt;Proppertais&gt;&gt;T_id:string
++&lt;&lt;Proppertais&gt;&gt;T_date:string
++&lt;&lt;Proppertais&gt;&gt;Cname:string
+--
++Parent(id:string,fn:string,
+ln:string,dt;string,ph:int,
+desc:string,rid:string,dir:string,
+tot:string,td:string,cn:string);
++addinvoice:void;
++updateinvoice:void;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>650</x>
+      <y>300</y>
+      <w>210</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>Employee
+--
++&lt;&lt;Proppertais&gt;&gt;J_type:string
++&lt;&lt;Proppertais&gt;&gt;Salary:decimal
++&lt;&lt;Proppertais&gt;&gt;Bouns:decimal
++&lt;&lt;Proppertais&gt;&gt;Minus:decimal
++&lt;&lt;Proppertais&gt;&gt;Address:string
++&lt;&lt;Proppertais&gt;&gt;m_id:string
+--
++Employee(id:string,fn:string,
+ln:string,dt:string,ph:int,
+desc:string,jt:string,sal:decimal,
+bo:decimal,mi:decimal,
+add:string,mi:string);
++Addemployee:void;
++updateemployee:void;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>220</y>
+      <w>250</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0;230.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>210</x>
+      <y>220</y>
+      <w>250</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>230.0;10.0;230.0;80.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>650</x>
+      <y>650</y>
+      <w>210</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>Travels
+--
++&lt;&lt;Proppertais&gt;&gt;T_id:string
++&lt;&lt;Proppertais&gt;&gt;T_name:string
++&lt;&lt;Proppertais&gt;&gt;Direction:string
++&lt;&lt;Proppertais&gt;&gt;Go_time:string
++&lt;&lt;Proppertais&gt;&gt;T_time:string
++&lt;&lt;Proppertais&gt;&gt;Total_saits:int
++&lt;&lt;Proppertais&gt;&gt;A_saits:int
++&lt;&lt;Proppertais&gt;&gt;B_saits:int
++&lt;&lt;Proppertais&gt;&gt;Num_sait:string
++&lt;&lt;Proppertais&gt;&gt;Description:string
++&lt;&lt;Proppertais&gt;&gt;T_date:string
+--
++Employee(tid:string,
+tname:string,dir:string,
+gotime:string,ttime:string,tot:int,
+asait:int,bsait:int,nsait:string,
+desc:string,tdate:string);
++addtravels:void;
++updatetravels:void;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>660</y>
+      <w>210</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Company
+--
++&lt;&lt;Proppertais&gt;&gt;Name:string
++&lt;&lt;Proppertais&gt;&gt;Address:string
++&lt;&lt;Proppertais&gt;&gt;M_id:string
++&lt;&lt;Proppertais&gt;&gt;M_fname:string
++&lt;&lt;Proppertais&gt;&gt;M_lname:string
++&lt;&lt;Proppertais&gt;&gt;M_phone:string
++&lt;&lt;Proppertais&gt;&gt;Description:string
++&lt;&lt;Proppertais&gt;&gt;C_date:string
+--
++Employee(nam:string,
+Add:string,ph:string,mi:string,
+mfname:string,mlname:string,
+desc:string,cdate:string);
++addcompany:void;
++Updatecompany:void;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>560</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>560</y>
+      <w>470</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;100.0;450.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>400</y>
+      <w>450</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;430.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>230</x>
+      <y>740</y>
+      <w>440</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>420.0;10.0;10.0;30.0</additional_attributes>
+  </element>
+</diagram>
